@@ -32,3 +32,26 @@ function scrollToSection(getintouch) {
       section.scrollIntoView({ behavior: 'smooth' });
   }
 }
+
+// RETURN BUTTON 
+
+function voltarAoTopo() {
+  document.body.scrollTop = 0; // Para navegadores mais antigos
+  document.documentElement.scrollTop = 0; // Para navegadores modernos
+}
+
+// Exibir ou ocultar o botão conforme o usuário rola a página
+window.onscroll = function() {
+  mostrarOcultarBotao();
+};
+
+function mostrarOcultarBotao() {
+  var btnTopo = document.getElementById("return");
+
+  // Mostrar o botão quando o usuário rolar mais de 300 pixels para baixo
+  if (document.body.scrollTop > 220 || document.documentElement.scrollTop > 220) {
+      btnTopo.style.display = "block";
+  } else {
+      btnTopo.style.display = "none";
+  }
+}

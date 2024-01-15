@@ -18,7 +18,7 @@
 </head>
 <body>
   <div class="container">
-    <button onclick="scrollToSection('banner')" id="return"><i class="ph ph-arrow-up"></i></button>
+    <button onclick="voltarAoTopo()" id="return"><i class="ph ph-arrow-up"></i></button>
     <nav>
       <a id="logo" href="index.html">NF_</a>
       <div class="nav-routes">
@@ -51,7 +51,7 @@
         <h2>I started learning in the second half of 2022, today, I have experience in different technologies, to make your business go further.</h2>
         <div class="banner-buttons">
           <a href="https://wa.link/0ojfdr" target="_blank">Let's Talk <i class="ph ph-arrow-right"></i></a>
-          <button>My Projects <i class="ph ph-arrow-line-down-right"></i></button>
+          <button onclick="scrollToSection('projects')">My Projects <i class="ph ph-arrow-line-down-right"></i></button>
         </div>
       </div>
       <div class="banner-image">
@@ -154,6 +154,10 @@
           Dart
         </div>
         <div class="skills-item">
+          <i class='bx bx-server' ></i>
+          Rest API
+        </div>
+        <div class="skills-item">
           <i class='bx bxl-git' ></i>
           Git
         </div>
@@ -164,6 +168,9 @@
           </span>
         </button>
       </div>
+    </section>
+    <section id="projects">
+      
     </section>
   </div>
   <script src="/script.js"></script>
