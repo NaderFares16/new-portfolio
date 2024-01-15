@@ -8,8 +8,8 @@
   /* COLORS */
   --nf-blue: #3900D1;
   --nf-font: #4b5361;
-  --nf-white: #F6F5F0;
-  --nf-line: #C0C3CE;
+  --nf-white: #f6f5f0;
+  --nf-line: #DCDCDC;
   --nf-black: #222222;
   --nf-white-alternative: #FAFAFA;
 
@@ -354,8 +354,7 @@ nav {
 .a-card {
   width: 100%;
   height: max-content;
-  background-color: var(--nf-white-alternative);
-  border-radius: 12px;
+  background-color: var(--nf-white);
   border: 1px solid var(--nf-line);
   padding: 1rem;
   display: flex;
@@ -418,6 +417,10 @@ nav {
   color: var(--nf-font);
 }
 
+.a-card-header-social > a:hover {
+  opacity: 85%;
+}
+
 .a-card-container {
   width: 100%;
   height: max-content;
@@ -431,11 +434,11 @@ nav {
 .a-card-item {
   display: flex;
   width: 239px;
-  padding: 12px;
+  padding: 12px 16px;
   flex-direction: column;
   align-items: flex-start;
   gap: 4px;
-  border-radius: 12px;
+  border-radius: 5px;
   border: 1px solid var(--nf-line);  
 }
 
