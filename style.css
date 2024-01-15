@@ -737,7 +737,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: var(--nf-font);
-  color: var(--nf-white-btn);
+  color: var(--nf-white);
   text-decoration: none;
   transition: ease 200ms;
   cursor: not-allowed;
