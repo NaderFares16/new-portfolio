@@ -6,13 +6,14 @@
 
 :root {
   /* COLORS */
-  --nf-blue: #3900D1;
+  --nf-blue: #084ccf;
   --nf-font: #4b5361;
   --nf-white: #f6f5f0;
   --nf-white-btn: #f6f5f0;
   --nf-line: #DCDCDC;
   --nf-black: #222222;
   --nf-white-alternative: #FAFAFA;
+  --transicao: background-color 200ms ease, color 200ms ease;
 
   /* FONTS */
   --nf-title: 'Poppins', sans-serif;
@@ -22,9 +23,9 @@
 }
 
 .dark-mode {
-  --nf-blue: #3900D1;
+  --nf-blue: #084ccf;
   --nf-font: #EDEDF3;
-  --nf-white: #010409;
+  --nf-white: #0F0F0F;
   --nf-white-btn: #f6f5f0;
   --nf-line: #21262D;
   --nf-black: #FAFAFA;
@@ -36,6 +37,7 @@ body {
   height: 100vh;
   background-color: var(--nf-white);
   font-family: var(--nf-subtitle);
+  transition: var(--transicao);
   overflow-x: hidden;
   margin-top: 2rem;
 }
@@ -622,16 +624,29 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
   }
   .banner-info > h1, h2 {
-    text-align: center;
+    text-align: left;
+  }
+  .banner-info > h1 {
+    font-size: 2rem;
   }
   .banner-info > h2 {
-    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+    font-family: var(--nf-subtitle);
+    color: var(--nf-font);
+    font-size: 19px;
   }
   .banner-buttons {
+    width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+  }
+
+  .banner-buttons > button {
+    width: 172px;
   }
 
   /* ABOUT PHONE */
