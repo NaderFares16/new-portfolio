@@ -55,3 +55,18 @@ function mostrarOcultarBotao() {
       btnTopo.style.display = "none";
   }
 }
+
+// DARK MODE
+
+function alternarModo() {
+  var corpo = document.body;
+
+  // Adiciona ou remove a classe para alternar entre modo claro e escuro
+  corpo.classList.toggle("dark-mode");
+
+  // Você também pode adicionar lógica adicional aqui conforme necessário
+
+  // Exemplo: Alterar texto do botão
+  var btnModo = document.getElementById("btnModo");
+  btnModo.textContent = corpo.classList.contains("dark-mode") ? "Light Theme" : "Dark Theme";
+}

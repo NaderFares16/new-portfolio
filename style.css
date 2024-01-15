@@ -9,6 +9,7 @@
   --nf-blue: #3900D1;
   --nf-font: #4b5361;
   --nf-white: #f6f5f0;
+  --nf-white-btn: #f6f5f0;
   --nf-line: #DCDCDC;
   --nf-black: #222222;
   --nf-white-alternative: #FAFAFA;
@@ -18,6 +19,16 @@
   --nf-subtitle: 'IBM Plex Sans', sans-serif;
   --nf-logo: 'Coolvetica', sans-serif;
   --nf-subtitle-alternative: 'JetBrains Mono', sans-serif;
+}
+
+.dark-mode {
+  --nf-blue: #3900D1;
+  --nf-font: #EDEDF3;
+  --nf-white: #010409;
+  --nf-white-btn: #f6f5f0;
+  --nf-line: #21262D;
+  --nf-black: #FAFAFA;
+  --nf-white-alternative: #21262D;
 }
 
 body {
@@ -250,7 +261,7 @@ nav {
   justify-content: space-between;
   background-color: var(--nf-blue);
   text-decoration: none;
-  color: var(--nf-white);
+  color: var(--nf-white-btn);
   height: 40px;
   padding: 0px 16px;
   transition: ease 200ms;
@@ -542,7 +553,7 @@ nav {
   width: 300px;
   height: 120px;
   background-color: var(--nf-blue);
-  color: var(--nf-white);
+  color: var(--nf-white-btn);
   display: flex;
   padding: 1rem;
   border: none;

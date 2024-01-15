@@ -27,6 +27,7 @@
         <button onclick="scrollToSection('skills')" class="hover-underline-animation" href="#">Skills</button>
         <button onclick="scrollToSection('projects')" class="hover-underline-animation" href="#">Projects</button>
         <button onclick="scrollToSection('getintouch')" class="hover-underline-animation" href="#">Get in touch</button>
+        <button id="btnModo" onclick="alternarModo()">Dark Theme</button>
         <button class="button-57" role="button"><span class="text">Download CV</span><span><p>Thank You</p></span></button>
       </div>
       <div class="nav-phone-routes">
@@ -40,6 +41,7 @@
             <li><a onclick="scrollToSection('skills')"  class="dropdown-item" href="#">Skills</a></li>
             <li><a onclick="scrollToSection('projects')" class="dropdown-item" href="#">Projects</a></li>
             <li><a onclick="scrollToSection('getintouch')" class="dropdown-item" href="#">Get in touch</a></li>
+            <li><a onclick="alternarModo()" class="dropdown-item" href="#">Dark Theme</a></li>
             <li><a class="dropdown-item" href="#">Donwload CV</a></li>
           </ul>
         </div>
@@ -161,7 +163,7 @@
           <i class='bx bxl-git' ></i>
           Git
         </div>
-        <button class="skills-btn">
+        <button onclick="scrollToSection('projects')" class="skills-btn">
           Projects
           <span>
             <i class="ph ph-arrow-down-right"></i>
