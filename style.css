@@ -17,6 +17,12 @@
   --nf-white-alternative: #FAFAFA;
   --transicao: background-color 200ms ease, color 200ms ease;
 
+  /* FOOTER COLORS */
+  --nff-white: #f6f5f0;
+  --nff-blue: #084ccf;
+  --nff-contrast: #C0C5CE;
+  --nff-line: #215ed4;
+
   /* FONTS */
   --nf-title: 'Poppins', sans-serif;
   --nf-subtitle: 'IBM Plex Sans', sans-serif;
@@ -39,6 +45,8 @@
 body {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: var(--nf-white);
   font-family: var(--nf-subtitle);
   transition: var(--transicao);
@@ -821,7 +829,7 @@ nav {
   height: 450px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: start;
   gap: 1rem;
 }
@@ -936,6 +944,116 @@ nav {
 
 #contactForm > button > i {
   font-size: 20px;
+}
+
+/* FOOTER */
+
+.footer {
+  margin-top: 3rem;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  gap: 1rem;
+  background-color: var(--nff-blue);
+}
+
+.footer-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  padding: 64px 24px;
+  background-color: var(--nff-blue);
+  margin: 0px 116px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.footer-logo > p {
+  font-size: 12px;
+  font-family: var(--nf-subtitle);
+  color: var(--nff-contrast);
+}
+
+#footer-logo {
+  text-decoration: none;
+  color: var(--nff-white);
+  font-family: var(--nf-logo);
+  font-size: 32px;
+}
+
+.footer-col {
+  width: 178px;
+  height: 188px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-line {
+  width: 1px;
+  height: 100%;
+  background-color: var(--nff-line);
+  margin-right: 40px;
+}
+
+.footer-content {
+  width: max-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+}
+
+.footer-content > h1 {
+  font-size: 20px;
+  color: var(--nff-white);
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  font-family: var(--nf-title);
+}
+
+.footer-content > a {
+  text-decoration: none;
+  font-family: var(--nf-subtitle);
+  color: var(--nff-contrast);
+  font-size: 14px;
+}
+
+.footer-content > a:hover {
+  color: var(--nff-white);
+}
+
+.footer-content > button {
+  text-decoration: none;
+  font-family: var(--nf-subtitle);
+  color: var(--nff-contrast);
+  font-size: 14px;
+  border: none;
+  background: transparent;
+}
+
+.footer-content > button:hover {
+  color: var(--nff-white);
+}
+
+#btnModo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 1rem;
+  width: 136px;
+  height: 40px;
+  border: var(--nff-white) 1px solid;
+  background-color: var(--nff-blue);
+  color: var(--nff-white);
 }
 
 /* PHONE SCREEN */
@@ -1061,4 +1179,51 @@ nav {
   #contactForm > button {
     width: 100%;
   }
+
+  /* FOOTER */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  margin-top: 4rem;
+}
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .footer-logo {
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-line {
+    display: none;
+  }
+
+  .footer-content {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    flex-direction: column;
+  }
+
+
 }
