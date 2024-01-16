@@ -122,7 +122,7 @@ nav {
 
 #drpbtn {
   border-radius: 0px;
-  background-color: var(--nf-white);
+  background-color: var(--nf-);
   color: var(--nf-font);
   border: 1px solid var(--nf-font);
 }
@@ -1126,6 +1126,7 @@ nav {
 
   .about-info {
     width: 100%;
+    height: max-content;
   }
 
   .about-card {
