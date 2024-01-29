@@ -64,7 +64,7 @@ body {
 
 /* RETUNR BUTTON */
 
-#return {
+#return_button {
   width: 48px;
   height: 48px;
   background-color: var(--nf-white);
@@ -77,7 +77,7 @@ body {
   transition: ease 200ms;
 }
 
-#return:hover {
+#return_button:hover {
   background-color: var(--nf-black);
   color: var(--nf-white);
   transform: translateY(-5px);
