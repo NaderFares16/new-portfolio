@@ -6,7 +6,11 @@
 
 :root {
   /* COLORS */
-  --nf-blue: #084ccf;
+    --nf-blue: #084ccf; /* CONTAINER */
+    --nff-blue: #084ccf; /* FOOTER */
+    --nff-line: #215ed4; /* FOOTER LINE*/
+  /*--nff-line: #215ed4;*/
+  /*--nf-blue: #084ccf;*/
   --nf-font: #4b5361;
   --nf-white: #f6f5f0;
   --nf-white-btn: #f6f5f0;
@@ -19,9 +23,7 @@
 
   /* FOOTER COLORS */
   --nff-white: #f6f5f0;
-  --nff-blue: #084ccf;
   --nff-contrast: #C0C5CE;
-  --nff-line: #215ed4;
 
   /* FONTS */
   --nf-title: 'Poppins', sans-serif;
@@ -843,6 +845,10 @@ nav {
   flex-direction: column;
   align-items: start;
   justify-content: center;
+}
+
+#details-title:hover {
+  text-decoration: underline;
 }
 
 #details > h1 {

@@ -22,7 +22,7 @@
     <nav>
       <a id="logo" href="index.html">NF_</a>
       <div class="nav-routes">
-        <button onclick="scrollToSection('banner')" class="hover-underline-animation" href="#">Home</button>
+        <button onclick="voltarAoTopo()" class="hover-underline-animation" href="#">Home</button>
         <button onclick="scrollToSection('about')" class="hover-underline-animation" href="#">About</button>
         <button onclick="scrollToSection('skills')" class="hover-underline-animation" href="#">Skills</button>
         <button onclick="scrollToSection('projects')" class="hover-underline-animation" href="#">Projects</button>
@@ -35,7 +35,7 @@
             Menu
           </a>
           <ul class="dropdown-menu">
-            <li><a onclick="scrollToSection('banner')" class="dropdown-item" href="#">Home</a></li>
+            <li><a onclick="voltarAoTopo()" class="dropdown-item" href="#">Home</a></li>
             <li><a onclick="scrollToSection('about')" class="dropdown-item" href="#">About</a></li>
             <li><a onclick="scrollToSection('skills')"  class="dropdown-item" href="#">Skills</a></li>
             <li><a onclick="scrollToSection('projects')" class="dropdown-item" href="#">Projects</a></li>
@@ -347,8 +347,8 @@
             <img style="width: 88px; margin-bottom: 1rem;" src="/assets/profile.svg" alt="Nader Fares - Profile">
             <div id="details" class="contact-details">
               <h1>Contact Details</h1>
-              <a target="_blank" href="mailto:naderalifares16@hotmail.com">naderalifares16@hotmail.com</a>
-              <a target="_blank" href="tel:+5517988276557">+55 (17) 98827-6557</a>
+              <a id="details-title" target="_blank" href="mailto:naderalifares16@hotmail.com">naderalifares16@hotmail.com</a>
+              <a id="details-title" target="_blank" href="tel:+5517988276557">+55 (17) 98827-6557</a>
             </div>
             <div id="details" class="business-details">
               <h1>Bussiness Details</h1>
@@ -357,9 +357,9 @@
             </div>
             <div id="details" class="social-details">
               <h1>Socials</h1>
-              <a target="_blank" href="https://www.linkedin.com/in/nader-ali-fares/">LinkedIn</a>
-              <a target="_blank" href="https://www.instagram.com/naderalifares_/">Instagram</a>
-              <a target="_blank" href="https://twitter.com/NaderAliFares">Twitter</a>
+              <a id="details-title" target="_blank" href="https://www.linkedin.com/in/nader-ali-fares/">LinkedIn</a>
+              <a id="details-title" target="_blank" href="https://www.instagram.com/naderalifares_/">Instagram</a>
+              <a id="details-title" target="_blank" href="https://twitter.com/NaderAliFares">Twitter</a>
             </div>
           </div>
         </div>
@@ -391,6 +391,7 @@
             <button onclick="scrollToSection('projects')">My Projects</button>
             <button onclick="scrollToSection('skills')">Skills</button>
             <button onclick="scrollToSection('getintouch')">Contact Me</button>
+            <a target="_blank" href="https://drive.google.com/file/d/19nvUTTairgtVIa2yJy7FgXD-2zQe6bpJ/view?usp=sharing">Download CV <i class='bx bx-link-external'></i></a>
           </div>
       </div>
     </div>
