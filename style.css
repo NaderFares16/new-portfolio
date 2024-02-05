@@ -168,6 +168,7 @@ nav {
 .button-57 {
   position: relative;
   overflow: hidden;
+  border: none;
   color: var(--nf-font);
   display: inline-block;
   font-size: 15px;
@@ -176,6 +177,7 @@ nav {
   text-decoration: none;
   cursor: pointer;
   background: var(--nf-white);
+  font-family: var(--nf-subtitle-alternative);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
