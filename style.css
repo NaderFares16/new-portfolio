@@ -471,6 +471,11 @@ nav {
   border: 1px solid var(--nf-line);  
 }
 
+#card-item-icon {
+  font-size: 15px;
+  color: var(--nf-blue);
+}
+
 .a-card-item-header {
   display: flex;
   flex-direction: row;
