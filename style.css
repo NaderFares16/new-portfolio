@@ -234,9 +234,8 @@ nav {
 
 #banner {
   width: 100%;
-  height: 500px;
+  height: auto;
   display: flex;
-  flex-direction: row;
 }
 
 .banner-info {
@@ -469,6 +468,11 @@ nav {
   gap: 4px;
   border-radius: 5px;
   border: 1px solid var(--nf-line);  
+}
+
+#card-item-icon {
+  font-size: 15px;
+  color: var(--nf-blue);
 }
 
 .a-card-item-header {
@@ -1111,177 +1115,6 @@ nav {
 
 /* PHONE SCREEN */
 
-@media (max-width: 470px) {
-  .container {
-    padding: 0px 1.5rem;
-  }
-  nav {
-    position: sticky;
-    top: 0;
-    background-color: var(--nf-white);
-  }
-  #banner {
-    height: 400px;
-  }
-  .nav-routes {
-    display: none;
-  }
-  .nav-phone-routes {
-    display: flex;
-  }
-  .banner-image {
-    display: none;
-  }
-  .banner-info {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-  .banner-info > h1, h2 {
-    text-align: left;
-  }
-  .banner-info > h1 {
-    font-size: 2rem;
-  }
-  .banner-info > h2 {
-    line-height: 1.7;
-    text-align: justify;
-    font-family: var(--nf-subtitle);
-    color: var(--nf-font);
-    font-size: 19px;
-  }
-  .banner-buttons {
-    width: 100%;
-    align-items: center;
-    justify-content: start;
-  }
-
-  .banner-buttons > button {
-    width: 172px;
-  }
-
-  /* ABOUT PHONE */
-
-  #about {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    gap: 0.5rem;
-  }
-
-  #line {
-    width: 100%;
-  }
-
-  .about-info {
-    width: 100%;
-    height: max-content;
-  }
-
-  .about-card {
-    width: 100%;
-  }
-
-  .a-card-header {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-  }
-
-  .a-card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
-  
-  /* SKILLS */
-
-  .skills-header {
-    width: 100%;
-    text-align: justify;
-  }
-
-  .skills-wrapper {
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* PROJECTS */
-
-  .projects-item {
-    width: 100%;
-  }
-
-  /* GET IN TOUCH */
-
-  .getintouch-body-right {
-    display: none;
-  }
-
-  .getintouch-body-left {
-    width: 100%;
-  }
-
-  .getintouch-body-left-card {
-    width: 100%;
-  }
-  #contactForm > button {
-    width: 100%;
-  }
-
-  /* FOOTER */
-
-.footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 0px;
-  margin-top: 4rem;
-}
-
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .footer-logo {
-    width: 300px;
-    height: 200px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer-line {
-    display: none;
-  }
-
-  .footer-content {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer-col {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-    flex-direction: column;
-  }
-
-
-}
-
 @media (max-width: 990px) {
   .container {
     padding: 0px 1.5rem;
@@ -1291,22 +1124,18 @@ nav {
     top: 0;
     background-color: var(--nf-white);
   }
-  #banner {
-    height: 400px;
-  }
   .nav-routes {
     display: none;
   }
   .nav-phone-routes {
     display: flex;
-    flex-direction: column;
   }
   .banner-image {
     display: none;
   }
   .banner-info {
     width: 100%;
-    height: 100%;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1314,14 +1143,14 @@ nav {
     gap: 1rem;
   }
   .banner-info > h1, h2 {
-    text-align: left;
+    text-align: center;
   }
   .banner-info > h1 {
     font-size: 2rem;
   }
   .banner-info > h2 {
     line-height: 1.7;
-    text-align: justify;
+    text-align: center;
     font-family: var(--nf-subtitle);
     color: var(--nf-font);
     font-size: 19px;
@@ -1329,9 +1158,9 @@ nav {
   .banner-buttons {
     width: 100%;
     align-items: center;
-    justify-content: start;
+    justify-content: space-evenly;
   }
-
+  
   .banner-buttons > button {
     width: 172px;
   }
@@ -1450,6 +1279,5 @@ nav {
     padding: 0px;
     flex-direction: column;
   }
-
-
+  
 }
