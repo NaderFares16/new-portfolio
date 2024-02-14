@@ -57,7 +57,6 @@ function mostrarOcultarBotao() {
 }
 
 // DARK MODE
-
 function alternarModo() {
   var corpo = document.body;
 
