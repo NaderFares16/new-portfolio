@@ -1,35 +1,10 @@
 function scrollToSection(banner) {
   var section = document.getElementById(banner);
   if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-  }
-}
-
-function scrollToSection(about) {
-  var section = document.getElementById(about);
-  if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-  }
-}
-
-function scrollToSection(skills) {
-  var section = document.getElementById(skills);
-  if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-  }
-}
-
-function scrollToSection(projects) {
-  var section = document.getElementById(projects);
-  if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-  }
-}
-
-function scrollToSection(getintouch) {
-  var section = document.getElementById(getintouch);
-  if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      // Subtrai 50 pixels da posição superior da seção
+      var offset = section.getBoundingClientRect().top - 40;
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Adiciona 'block: 'start'' para garantir que a parte superior da seção seja visível
+      window.scrollBy(0, offset); // Realiza o ajuste adicional
   }
 }
 
@@ -56,16 +31,9 @@ function mostrarOcultarBotao() {
   }
 }
 
-// DARK MODE
-function alternarModo() {
-  var corpo = document.body;
+const drawer = document.querySelector('.drawer-overview');
+  const openButton = drawer.nextElementSibling;
+  const closeButton = drawer.querySelector('sl-button[variant="primary"]');
 
-  // Adiciona ou remove a classe para alternar entre modo claro e escuro
-  corpo.classList.toggle("dark-mode");
-
-  // Você também pode adicionar lógica adicional aqui conforme necessário
-
-  // Exemplo: Alterar texto do botão
-  var btnModo = document.getElementById("btnModo");
-  btnModo.textContent = corpo.classList.contains("dark-mode") ? "Light Theme" : "Dark Theme";
-}
+  openButton.addEventListener('click', () => drawer.show());
+  closeButton.addEventListener('click', () => drawer.hide());

@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/themes/light.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/shoelace-autoloader.js"></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
@@ -22,37 +24,36 @@
     <nav>
       <a id="logo" href="index.html">NF_</a>
       <div class="nav-routes">
-        <button onclick="voltarAoTopo()" class="hover-underline-animation" href="#">Home</button>
-        <button onclick="scrollToSection('about')" class="hover-underline-animation" href="#">About</button>
-        <button onclick="scrollToSection('skills')" class="hover-underline-animation" href="#">Skills</button>
-        <button onclick="scrollToSection('projects')" class="hover-underline-animation" href="#">Projects</button>
-        <button onclick="scrollToSection('getintouch')" class="hover-underline-animation" href="#">Get in touch</button>
+        <button onclick="voltarAoTopo()" class="hover-underline-animation" href="#">Início</button>
+        <button onclick="scrollToSection('about')" class="hover-underline-animation" href="#">Sobre</button>
+        <button onclick="scrollToSection('skills')" class="hover-underline-animation" href="#">Habilidades</button>
+        <button onclick="scrollToSection('projects')" class="hover-underline-animation" href="#">Projetos</button>
+        <button onclick="scrollToSection('getintouch')" class="hover-underline-animation" href="#">Contato</button>
         <!-- TESTE BRANCH -->
       </div>
       <div class="nav-phone-routes">
-        <div class="dropdown">
-          <a class="btn btn-secondary dropdown-toggle" id="drpbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Menu
-          </a>
-          <ul class="dropdown-menu">
-            <li><a onclick="voltarAoTopo()" class="dropdown-item" href="#">Home</a></li>
-            <li><a onclick="scrollToSection('about')" class="dropdown-item" href="#">About</a></li>
-            <li><a onclick="scrollToSection('skills')"  class="dropdown-item" href="#">Skills</a></li>
-            <li><a onclick="scrollToSection('projects')" class="dropdown-item" href="#">Projects</a></li>
-            <li><a onclick="scrollToSection('getintouch')" class="dropdown-item" href="#">Get in touch</a></li>
-            <li><a onclick="alternarModo()" class="dropdown-item" href="#">Dark Theme</a></li>
-            <li><a class="dropdown-item" href="https://drive.google.com/file/d/19nvUTTairgtVIa2yJy7FgXD-2zQe6bpJ/view?usp=sharing">Donwload CV</a></li>
-          </ul>
+        <div class="dropdown-selection-alt">
+          <sl-dropdown>
+            <sl-button class="dd-btn" slot="trigger"><img src="/assets/icons/burger.svg" style="width: 24px;" alt="Menu"></sl-button>
+            <sl-menu>
+              <sl-menu-item value="cut"><a onclick="voltarAoTopo()" class="dropdown-item" href="#">Home</a></sl-menu-item>
+              <sl-menu-item value="cut"><a onclick="scrollToSection('about')" class="dropdown-item" href="#">Sobre</a></sl-menu-item>
+              <sl-menu-item value="cut"><a onclick="scrollToSection('skills')" class="dropdown-item" href="#">Habilidades</a></sl-menu-item>
+              <sl-menu-item value="cut"><a onclick="scrollToSection('projects')" class="dropdown-item" href="#">Projetos</a></sl-menu-item>
+              <sl-menu-item value="cut"><a onclick="scrollToSection('getintouch')" class="dropdown-item" href="#">Entrar em Contato</a></sl-menu-item>
+              <sl-menu-item value="cut"><a class="dropdown-item" href="https://drive.google.com/file/d/19nvUTTairgtVIa2yJy7FgXD-2zQe6bpJ/view?usp=sharing">Download CV</a></sl-menu-item>
+            </sl-menu>
+          </sl-dropdown>
         </div>
       </div>
     </nav>
     <section id="banner">
       <div class="banner-info">
-        <h1>Hey, I'm Nader, A Software Developer from Brazil</h1>
-        <h2>I am a passionate about technology and its potential to enhance various aspects of our world.</h2>
+        <h1>Olá, Eu sou o Nader, Um Desenvolvedor de Software do Brasil</h1>
+        <h2>Tenho um grande amor pela tecnologia e acredito profundamente em como ela pode transformar o mundo em que vivemos.</h2>
         <div class="banner-buttons">
-          <a href="https://wa.link/0ojfdr" target="_blank">Let's Talk <i class="ph ph-arrow-right"></i></a>
-          <button onclick="scrollToSection('projects')">My Projects <i class="ph ph-arrow-line-down-right"></i></button>
+          <a href="https://wa.link/0ojfdr" target="_blank">Contato <i class="ph ph-arrow-right"></i></a>
+          <button onclick="scrollToSection('projects')">Meus Projetos <i class="ph ph-arrow-line-down-right"></i></button>
         </div>
       </div>
       <div class="banner-image">
@@ -61,24 +62,14 @@
     </section>
     <section id="about">
       <div class="about-info">
-        <div id="line"></div>
-        <h1>About me</h1>
-        <p>Hello, I'm Nader, a Computer Science student passionate about technology since childhood. I began my journey into programming in 2022 and have since worked on various local projects, honing my skills in JavaScript, Python, SQL, and more. I'm recognized for my dedication, commitment, and effective communication. I'm always open to new learning opportunities and collaboration. If you're interested in connecting, feel free to send me a message!</p>
+        <h1>Sobre mim</h1>
+        <p>Olá, sou Nader, um estudante de Ciência da Computação apaixonado por tecnologia desde criança. Comecei minha jornada na programação em 2022 e, desde então, trabalhei em vários projetos locais, aprimorando minhas habilidades em JavaScript, Python, SQL e muito mais. Sou reconhecido pela minha dedicação, comprometimento e comunicação. Estou sempre aberto a novas oportunidades de aprendizado e colaboração. Se você está interessado em se conectar, sinta-se livre para me enviar uma mensagem!</p>
       </div>
-      <section id="ribbon">
-        <div class="ribbon-title"><span>CERTIFIED BY</span></div>
-        <div class="ribbon-logos">
-          <a href="https://www.linkedin.com/in/nader-ali-fares/" target="_blank"><img style="width: 132px;" src="/assets/logos/microsoft.svg" alt="Microsoft">
-          <a href="https://www.linkedin.com/in/nader-ali-fares/" target="_blank"><img style="width: 88px;" src="/assets/logos/ibm.svg" alt="IBM"></a>
-          <a href="https://www.linkedin.com/in/nader-ali-fares/" target="_blank"><img style="width: 132px;" src="/assets/logos/linkedin.svg" alt="LinkedIn"></a>
-        </div>
-      </section>
     </section>
     <section id="skills">
       <div class="skills-header">
-        <div id="line"></div>
-        <h1>My Skills</h1>
-        <p>Here are some technologies I have experience with.</p>
+        <h1>Minhas Habilidades</h1>
+        <p>Aqui estão algumas tecnologias que tenho habilidades.</p>
       </div>
       <div class="skills-wrapper">
         <div class="skills-item">
@@ -143,44 +134,25 @@
     </section>
     <section id="projects">
       <div class="projects-header">
-        <div id="line"></div>
-        <h1>My Projects</h1>
-        <p>In this part you will find some projects that I worked on using my skills.</p>
+        <h1>Meus Projetos</h1>
+        <p>Aqui você verá alguns projetos que trabalhei durante meu aprendizado.</p>
       </div>
       <div class="projects-wrapper">
         <div class="projects-item">
           <img src="/assets/preview/portfolio.svg" alt="Portfolio Preview">
           <div class="projects-container">
             <div class="projects-item-body">
+              <p id="tags">HTML • CSS • Javascript</p>
               <h1>Portfolio</h1>
               <p>Portfolio project created with Git and pure JavaScript.</p>
             </div>
             <div class="projects-item-button">
               <a id="repobtn" target="_blank" href="https://github.com/NaderFares16/new-portfolio">
-                Repository
+                Repositório
                 <i class="ph ph-arrow-square-out"></i>
               </a>
               <a id="trybtn" target="_blank" href="https://naderfares.netlify.app">
-                Try
-                <i class="ph ph-arrow-square-out"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="projects-item">
-          <img src="/assets/preview/coffee.svg" alt="Coffee Menu Preview">
-          <div class="projects-container">
-            <div class="projects-item-body">
-              <h1>Coffee Menu</h1>
-              <p>This is my first project, a coffee shop menu, using HTML and CSS.</p>
-            </div>
-            <div class="projects-item-button">
-              <a id="repobtn" target="_blank" href="https://github.com/NaderFares16/nader-s-coffee-maratona-explorer">
-                Repository
-                <i class="ph ph-arrow-square-out"></i>
-              </a>
-              <a id="trybtn" target="_blank" href="https://naderscoffee.netlify.app/">
-                Try
+                Ver
                 <i class="ph ph-arrow-square-out"></i>
               </a>
             </div>
@@ -190,16 +162,17 @@
           <img src="/assets/preview/twitter.svg" alt="Twitter UI Clone">
           <div class="projects-container">
             <div class="projects-item-body">
+              <p id="tags">Typescript • React • Vite</p>
               <h1>Twitter UI Clone</h1>
               <p>Created a Twitter replica in React, using React Router for SPAs with components.</p>
             </div>
             <div class="projects-item-button">
               <a id="repobtn" target="_blank" href="https://github.com/NaderFares16/react-twitter-ui-clone">
-                Repository
+                Repositório
                 <i class="ph ph-arrow-square-out"></i>
               </a>
               <a id="trybtn" target="_blank" href="https://twitteruiclone-naderfares.netlify.app/">
-                Try
+                Ver
                 <i class="ph ph-arrow-square-out"></i>
               </a>
             </div>
@@ -209,35 +182,17 @@
           <img src="/assets/preview/todolist.svg" alt="Twitter UI Clone">
           <div class="projects-container">
             <div class="projects-item-body">
+              <p id="tags">Java • Rest API</p>
               <h1>To Do List</h1>
               <p>Back-end application of a To Do List developed with Java, CRUD and database.</p>
             </div>
             <div class="projects-item-button">
               <a id="repobtn" target="_blank" href="https://github.com/NaderFares16/To-Do-list">
-                Repository
+                Repositório
                 <i class="ph ph-arrow-square-out"></i>
               </a>
               <button disabled id="trybtndsct" target="_blank">
-                Try
-                <i class="ph ph-arrow-square-out"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="projects-item">
-          <img src="/assets/preview/electron.svg" alt="To Do List">
-          <div class="projects-container">
-            <div class="projects-item-body">
-              <h1>To Do List 2.0 - Electron</h1>
-              <p>I developed a functional To Do List with Electron to store tasks and used JavaScript.</p>
-            </div>
-            <div class="projects-item-button">
-              <a id="repobtn" target="_blank" href="https://github.com/NaderFares16/to-do-list-electron">
-                Repository
-                <i class="ph ph-arrow-square-out"></i>
-              </a>
-              <button disabled id="trybtndsct" target="_blank">
-                Try
+                Ver
                 <i class="ph ph-arrow-square-out"></i>
               </button>
             </div>
@@ -247,16 +202,17 @@
           <img src="/assets/preview/cuepass.svg" alt="Cuepass Preview">
           <div class="projects-container">
             <div class="projects-item-body">
+              <p id="tags">Remix • React • Typescript</p>
               <h1>Random Password Generator</h1>
               <p>A Remix Project created with ReactJS, to generate random strong passwords and PIN's.</p>
             </div>
             <div class="projects-item-button">
               <a id="repobtn" target="_blank" href="https://github.com/NaderFares16/cuepass-password-generator">
-                Repository
+                Repositório
                 <i class="ph ph-arrow-square-out"></i>
               </a>
               <a id="trybtn" target="_blank" href="https://cuepass-password-generator.vercel.app/">
-                Try
+                Ver
                 <i class="ph ph-arrow-square-out"></i>
               </a>
             </div>
@@ -266,16 +222,17 @@
           <img src="/assets/preview/database_python.svg" alt="E-Commerce Inventory Management System">
           <div class="projects-container">
             <div class="projects-item-body">
+              <p id="tags">Python • SQLite • Flask</p>
               <h1>E-Commerce Inventory Management</h1>
               <p>I developed an inventory management system using Python and SQLite3 to manage products in a database.</p>
             </div>
             <div class="projects-item-button">
               <a id="repobtn" target="_blank" href="https://github.com/NaderFares16/Inventory_Management_System_Python">
-                Repository
+                Repositório
                 <i class="ph ph-arrow-square-out"></i>
               </a>
               <button disabled id="trybtndsct" target="_blank">
-                Try
+                Ver
                 <i class="ph ph-arrow-square-out"></i>
               </button>
             </div>
@@ -285,16 +242,17 @@
           <img src="/assets/preview/codebar.svg" alt="Cuepass Preview">
           <div class="projects-container">
             <div class="projects-item-body">
+              <p id="tags">Python • SQLite • Flask • Code128</p>
               <h1>Python Barcode Generator</h1>
               <p>A python backend server that allows users to create barcodes from strings using HTTP requests.</p>
             </div>
             <div class="projects-item-button">
               <a id="repobtn" target="_blank" href="https://github.com/NaderFares16/BarcodeManagement">
-                Repository
+                Repositório
                 <i class="ph ph-arrow-square-out"></i>
               </a>
               <a id="trybtn" target="_blank" href="https://www.linkedin.com/posts/nader-ali-fares_rocketseat-python-flask-activity-7161218087080407041-G8eN?utm_source=share&utm_medium=member_desktop">
-                Try
+                Ver
                 <i class="ph ph-arrow-square-out"></i>
               </a>
             </div>
@@ -304,16 +262,17 @@
           <img src="/assets/preview/patientcare.svg" alt="Cuepass Preview">
           <div class="projects-container">
             <div class="projects-item-body">
+              <p id="tags">Python • SQLite • Flask</p>
               <h1>PatientCare</h1>
               <p>PatientCare is a patient management system developed in Python with the Flask server framework.</p>
             </div>
             <div class="projects-item-button">
               <a id="repobtn" target="_blank" href="https://github.com/NaderFares16/PatientCare">
-                Repository
+                Repositório
                 <i class="ph ph-arrow-square-out"></i>
               </a>
               <button disabled id="trybtndsct" target="_blank">
-                Try
+                Ver
                 <i class="ph ph-arrow-square-out"></i>
               </button
             </div>
@@ -324,16 +283,17 @@
           <img src="/assets/preview/topictree.svg" alt="TopicTree Preview">
           <div class="projects-container">
             <div class="projects-item-body">
+              <p id="tags">Django • SQLite • Bootstrap</p>
               <h1>TopicTree | Content Organizer</h1>
               <p>TopicTree is a Django web application with SQLite3. It allows users to create topics and add learning notes.</p>
             </div>
             <div class="projects-item-button">
               <a id="repobtn" target="_blank" href="https://github.com/NaderFares16/TopicTree">
-                Repository
+                Repositório
                 <i class="ph ph-arrow-square-out"></i>
               </a>
               <button disabled id="trybtndsct" target="_blank">
-                Try
+                Ver
                 <i class="ph ph-arrow-square-out"></i>
               </button>
             </div>
@@ -343,16 +303,17 @@
           <img src="/assets/preview/fuelwise.svg" alt="FuelWise Preview">
           <div class="projects-container">
             <div class="projects-item-body">
+              <p id="tags">C Language</p>
               <h1>FuelWise | Fuel Economy </h1>
               <p>FuelWise is a C application that calculates the best cost-benefit between gasoline and ethanol for the driver.</p>
             </div>
             <div class="projects-item-button">
               <a id="repobtn" target="_blank" href="https://github.com/NaderFares16/FuelWise">
-                Repository
+                Repositório
                 <i class="ph ph-arrow-square-out"></i>
               </a>
               <button disabled id="trybtndsct" target="_blank">
-                Try
+                Ver
                 <i class="ph ph-arrow-square-out"></i>
               </button>
             </div>
@@ -361,25 +322,24 @@
     </section>
     <section id="getintouch">
       <div class="getintouch-header">
-        <div id="cnt"></div>
-        <h1>Get in Touch</h1>
-        <p>Let's work together! Please, contact me.</p>
+        <h1>Entrar em contato</h1>
+        <p>Vamos trabalhar juntos! Por favor, entre em contato.</p>
       </div>
       <div class="getintouch-body">
         <div class="getintouch-body-left">
           <div class="getintouch-body-left-card">
             <form action="https://formspree.io/f/xbjnlzjr" method="POST" id="contactForm">
-              <label for="name">What's your name?</label>
-              <input type="text" id="name" name="name" placeholder="John Doe *" required>
+              <label for="name">Qual seu nome?</label>
+              <input type="text" id="name" name="name" placeholder="Seu nome *" required>
   
-              <label for="email">What's your email?</label>
-              <input type="email" id="email" name="email" placeholder="john@doe.com *" required>
+              <label for="email">Qual seu e-mail?</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com *" required>
   
-              <label for="message">Your message</label>
-              <textarea id="message" name="message" rows="4" placeholder="Hello Nader, can you help me with ..." required></textarea>
+              <label for="message">Sua mensagem</label>
+              <textarea id="message" name="message" rows="4" placeholder="Olá Nader, você pode me ajudar ..." required></textarea>
   
               <button type="submit">
-                Send it!
+                Enviar
                 <i class="ph ph-paper-plane-right"></i>
               </button>
             </form>
@@ -389,17 +349,17 @@
           <div class="getintouch-body-right-container">
             <img style="width: 88px; margin-bottom: 1rem;" src="/assets/profile.svg" alt="Nader Fares - Profile">
             <div id="details" class="contact-details">
-              <h1>Contact Details</h1>
+              <h1>Detalhes de Contato</h1>
               <a id="details-title" target="_blank" href="mailto:naderalifares16@hotmail.com">naderalifares16@hotmail.com</a>
               <a id="details-title" target="_blank" href="tel:+5517988276557">+55 (17) 98827-6557</a>
             </div>
             <div id="details" class="business-details">
-              <h1>Bussiness Details</h1>
+              <h1>Detalhes de Negócios</h1>
               <p>Nader Ali Fares</p>
-              <p>Location: Brazil</p>
+              <p>Local: Brasil</p>
             </div>
             <div id="details" class="social-details">
-              <h1>Socials</h1>
+              <h1>Redes Sociais</h1>
               <a id="details-title" target="_blank" href="https://www.linkedin.com/in/nader-ali-fares/">LinkedIn</a>
               <a id="details-title" target="_blank" href="https://www.instagram.com/naderalifares_/">Instagram</a>
               <a id="details-title" target="_blank" href="https://twitter.com/NaderAliFares">Twitter</a>
@@ -414,12 +374,11 @@
       <div class="footer-logo">
         <a href="/index.html" id="footer-logo">NF_</a>
         <p>© 2024 Nader Fares.</p>
-        <button id="btnModo" onclick="alternarModo()">Switch Theme</button>
       </div>
       <div class="footer-col">
           <div class="footer-line"></div>
           <div class="footer-content">
-            <h1>Socials</h1>
+            <h1>Redes</h1>
             <a target="_blank" href="https://www.linkedin.com/in/nader-ali-fares/">LinkedIn</a>
             <a target="_blank" href="https://github.com/NaderFares16/">GitHub</a>
             <a target="_blank" href="https://www.instagram.com/naderalifares_/">Instagram</a>
@@ -430,10 +389,10 @@
       <div class="footer-col">
           <div class="footer-line"></div>
           <div class="footer-content">
-            <h1>Services</h1>
-            <button onclick="scrollToSection('projects')">My Projects</button>
-            <button onclick="scrollToSection('skills')">Skills</button>
-            <button onclick="scrollToSection('getintouch')">Contact Me</button>
+            <h1>Serviços</h1>
+            <button onclick="scrollToSection('projects')">Meus Projetos</button>
+            <button onclick="scrollToSection('skills')">Habilidades</button>
+            <button onclick="scrollToSection('getintouch')">Entrar em Contato</button>
             <a target="_blank" href="https://drive.google.com/file/d/19nvUTTairgtVIa2yJy7FgXD-2zQe6bpJ/view?usp=sharing">Download CV <i class='bx bx-link-external'></i></a>
           </div>
       </div>
