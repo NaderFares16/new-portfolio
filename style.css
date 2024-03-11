@@ -76,10 +76,10 @@ body {
 #return_button {
   width: 48px;
   height: 48px;
-  background-color: var(--nf-blue);
-  border: 1px solid var(--nf-line);
-  border-radius: 6px;
-  color: var(--nf-black);
+  background-color: #232328;
+  border: 1px solid var(--nf-line-git);
+  border-radius: 999px;
+  color: var(--nf-font);
   font-size: 20px;
   position: fixed;
   bottom: 24px;
@@ -162,9 +162,35 @@ nav {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   gap: 0.5rem;
+}
+
+#banner-pjt {
+  background-color: #18181B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid var(--nf-line);
+  border-radius: 999px;
+  padding: 6px 10px;
+  height: 32px;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+
+#banner-pjt:hover {
+  background-color: #272930;
+}
+
+#banner-pjt > i {
+  margin-top: 2.8px;
 }
 
 .banner-info > h1 {
@@ -192,28 +218,30 @@ nav {
 }
 
 .banner-buttons > a {
-  padding: 12px 1.2rem;
-  border-radius: 8px;
+  height: 40px;
+  padding: 10px 14px;
+  border-radius: 999px;
   display: flex;
   align-items: center;
   text-decoration: none;
   color: var(--nf-font);
   border: 1px solid var(--nf-line);
   gap: 1rem;
-  background-color: #0a0a0a;
+  background-color: #ffffff1A;
   font-weight: 600;
 }
 
 .banner-buttons > button {
-  padding: 12px 1.2rem;
-  border-radius: 8px;
+  height: 40px;
+  padding: 10px 12px;
+  border-radius: 999px;
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: var(--nf-black);
+  color: var(--nf-font);
   border: 1px solid var(--nf-line);
   gap: 1rem;
-  background-color: #ededed;
+  background-color: #ffffff1A;
   font-weight: 600;
   transition: ease 200ms;
 }
@@ -910,6 +938,17 @@ nav {
   background-color: transparent;
   outline: none;
   border: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #27272a;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 64px;
+  background-color: #3f3f46;
+  border-radius: 10px;
 }
 
 /* PHONE SCREEN */
