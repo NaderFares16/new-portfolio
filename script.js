@@ -1,10 +1,9 @@
 function scrollToSection(banner) {
   var section = document.getElementById(banner);
   if (section) {
-      // Subtrai 50 pixels da posição superior da seção
       var offset = section.getBoundingClientRect().top - 40;
-      section.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Adiciona 'block: 'start'' para garantir que a parte superior da seção seja visível
-      window.scrollBy(0, offset); // Realiza o ajuste adicional
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.scrollBy(0, offset);
   }
 }
 

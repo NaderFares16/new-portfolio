@@ -951,6 +951,99 @@ nav {
   border-radius: 10px;
 }
 
+/* SERVICES */
+
+#services {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.services-header {
+  width: 80%;
+}
+
+.services-container {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0px;
+  gap: 1.5rem;
+}
+
+.s-card {
+  width: 400px;
+  height: 307.1px;
+  padding: 1.5rem;
+  background-color: #111111;
+  border: 1px solid var(--nf-line);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border-radius: 26.45px;
+  transition: ease 150ms;
+}
+
+.s-card:hover {
+  background-color: #161616;
+  transform: translateY(-2px);
+}
+
+.s-card-icn {
+  width: 48px;
+  height: 48px;
+  border-radius: 10.45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(42,42,45);
+  background: linear-gradient(146deg, rgba(42,42,45,1) 0%, rgba(26,26,29,1) 100%);
+  border: 1px solid var(--nf-line);
+  color: #FAFAFA;
+  margin-bottom: 1.2rem;
+}
+
+.s-card > h5 {
+  color: var(--nf-blue);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32.3px;
+  font-family: var(--nf-title)
+}
+
+.s-card > p {
+  color: var(--nf-font);
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+  text-align: center;
+  margin: 0;
+}
+
+.services-header > h1 {
+  color: var(--nf-blue);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.3px;
+  font-family: var(--nf-title)
+}
+
+.services-header > p {
+  color: var(--nf-font);
+  font-family: Poppins;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 /* PHONE SCREEN */
 
 @media (max-width: 990px) {
@@ -1152,5 +1245,23 @@ nav {
     padding: 0px;
     flex-direction: column;
   }
+
+  .services-header {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .services-container {
+    flex-direction: column;
+  }
+
+  .s-card {
+    width: 100%;
+    height: max-content;
+  }
   
+  .s-card-icn {
+    width: 48px;
+    height: 48px;
+  }
 }
