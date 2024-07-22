@@ -28,7 +28,6 @@
         <button onclick="scrollToSection('about')" class="hover-underline-animation" href="#">Sobre</button>
         <button onclick="scrollToSection('skills')" class="hover-underline-animation" href="#">Habilidades</button>
         <button onclick="scrollToSection('projects')" class="hover-underline-animation" href="#">Projetos</button>
-        <button onclick="scrollToSection('services')" class="hover-underline-animation" href="#">Serviços</button>
         <button onclick="scrollToSection('getintouch')" class="hover-underline-animation" href="#">Contato</button>
         <!-- TESTE BRANCH -->
       </div>
@@ -41,7 +40,6 @@
               <sl-menu-item value="cut"><a onclick="scrollToSection('about')" class="dropdown-item" href="#">Sobre</a></sl-menu-item>
               <sl-menu-item value="cut"><a onclick="scrollToSection('skills')" class="dropdown-item" href="#">Habilidades</a></sl-menu-item>
               <sl-menu-item value="cut"><a onclick="scrollToSection('projects')" class="dropdown-item" href="#">Projetos</a></sl-menu-item>
-              <sl-menu-item value="cut"><a onclick="scrollToSection('services')" class="dropdown-item" href="#">Serviços</a></sl-menu-item>
               <sl-menu-item value="cut"><a onclick="scrollToSection('getintouch')" class="dropdown-item" href="#">Entrar em Contato</a></sl-menu-item>
               <sl-menu-item value="cut"><a class="dropdown-item" href="https://drive.google.com/file/d/19nvUTTairgtVIa2yJy7FgXD-2zQe6bpJ/view?usp=sharing">Download CV</a></sl-menu-item>
             </sl-menu>
@@ -51,7 +49,7 @@
     </nav>
     <section id="banner">
       <div class="banner-info">
-        <a id="banner-pjt" href="https://github.com/NaderFares16?tab=repositories" target="_blank">Confira meus novos projetos <i class='bx bx-right-arrow-alt'></i></a>
+        <a id="banner-pjt" href="https://github.com/NaderFares16?tab=repositories" target="_blank"><span id="alert"></span>Confira meus novos projetos <i class='bx bx-right-arrow-alt'></i></a>
         <h1>Olá, Eu sou o Nader, Um Desenvolvedor de Software do Brasil</h1>
         <h2>Tenho um grande amor pela tecnologia e acredito profundamente em como ela pode transformar o mundo em que vivemos.</h2>
         <div class="banner-buttons">
@@ -116,12 +114,12 @@
           Prisma
         </div>
         <div class="skills-item">
-          <i class="ph ph-target"></i>
-          Dart
+          <i class="ph ph-file-c"></i>
+          C Lang
         </div>
         <div class="skills-item">
-          <i class='bx bx-server' ></i>
-          Rest API
+          <i class='ph ph-coffee' ></i>
+          Java
         </div>
         <div class="skills-item">
           <i class='bx bxl-git' ></i>
@@ -142,22 +140,22 @@
       </div>
       <div class="projects-wrapper">
         <div class="projects-item">
-          <img src="/assets/preview/portfolio.svg" alt="Portfolio Preview">
+          <img src="/assets/preview/imc.svg" alt="IMC Calculator Preview">
           <div class="projects-container">
             <div class="projects-item-body">
-              <p id="tags">HTML • CSS • Javascript</p>
-              <h1>Portfolio</h1>
-              <p>Portfolio project created with Git and pure JavaScript.</p>
+              <p id="tags">Java</p>
+              <h1>IMC Calculator</h1>
+              <p>IMC Calculator é um software Java que calcula o Índice de Massa Corporal (IMC).</p>
             </div>
             <div class="projects-item-button">
-              <a id="repobtn" target="_blank" href="https://github.com/NaderFares16/new-portfolio">
+              <a id="repobtn" target="_blank" href="https://github.com/NaderFares16/IMCalculator">
                 Repositório
                 <i class="ph ph-arrow-square-out"></i>
               </a>
-              <a id="trybtn" target="_blank" href="https://naderfares.netlify.app">
+              <button disabled id="trybtndsct" target="_blank">
                 Ver
                 <i class="ph ph-arrow-square-out"></i>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -322,35 +320,6 @@
             </div>
           </div>
         </div>
-    </section>
-    <section id="services">
-      <div class="services-header">
-        <h1>Meus Serviços</h1>
-        <p>Ofereço soluções personalizadas, priorizando qualidade, eficiência, escalabilidade e resultados. Estou comprometido em alcançar o sucesso em seus objetivos.</p>
-      </div>
-      <div class="services-container">
-        <div class="s-card">
-          <div class="s-card-icn">
-            <i class='bx bx-windows bx-sm'></i>
-          </div>
-          <h5>Front-End Developer</h5>
-          <p>Desenvolvimento de Websites Responsivos e Interativos, empregando tecnologias de ponta como ReactJS, Next.js e Vite, combinadas com renomadas bibliotecas como TailwindCSS, ShadcnUI e React Router.</p>
-        </div>
-        <div class="s-card">
-          <div class="s-card-icn">
-            <i class='bx bxs-data bx-sm' ></i>
-          </div>
-          <h5>Back-End Developer</h5>
-          <p>Ampla experiência e proficiência no desenvolvimento de soluções e lógica no servidor, fazendo uso do Node.js para a criação de API's eficientes e robustas.</p>
-        </div>
-        <div class="s-card">
-          <div class="s-card-icn">
-            <i class='bx bxs-terminal bx-sm' ></i>
-          </div>
-          <h5>Software Developer</h5>
-          <p>Desenvolvimento de software para sistemas operacionais, empregando linguagens de programação de alto nível como Python, Java e C, com foco em atender os objetivos da empresa e as necessidades dos usuários.</p>
-        </div>
-      </div>
     </section>
     <section id="getintouch">
       <div class="getintouch-header">
