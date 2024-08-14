@@ -45,6 +45,7 @@ body {
   overflow-x: hidden;
   margin-top: 2rem;
   background-image: url(/assets/hero.svg);
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
