@@ -94,3 +94,25 @@ nav {
 #hire:hover {
   background-color: #F2F2F2;
 }
+
+#nav-menu {
+  display: none;
+}
+
+@media (max-width: 990px) {
+  /* MOBILE NAVIGATION BAR */
+  nav {
+    padding: 0 2rem;
+  }
+
+  .nav-anchors, .nav-buttons {
+    display: none;
+  }
+
+  #nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+  }
+}
